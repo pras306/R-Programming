@@ -1,0 +1,87 @@
+---
+title: "Cyclistic - A Case Study"
+author: "Prasanna Sriram"
+date: "2024-09-03"
+output: 
+  github_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+A case study to answer business questions of a fictional bike sharing company - Cyclistic. The goal of the study is to answer questions raised by Marketing team.
+
+The main question to analyze was how the annual members and casual riders used the Cyclistic bikes differently.
+
+
+### **Data Collection and Preparation**
+
+We will be using **Cyclistic's historical data**. This is publicly available data. We verified the integrity and privacy of the data collected. The key tasks that were performed during this step was: 
+
+* Download the data
+* Identify how it's organized
+* Sort and filter the data
+* Determine the credibility of the data
+
+### **Data Processing**
+
+In this step, we processed the data using **R Studio**. The following steps were performed
+
+* Checked data for errors. We noted that the data from different files were stored under different column names.
+* We noticed that some of the data were stored as different data types.
+* Removed unwanted columns in the datasets.
+* Combined all the datasets to make a single dataset.
+* Transformed data in certain columns to remove repeated values.
+* Created separate columns for year, month and days to analyze the data more effectively.
+* Removed bad data which had negative ride length values.
+
+```{r all_trips_summary, echo=FALSE}
+all_trips_summary <- read.csv("all_trips_summary.csv")
+all_trips_summary
+```
+
+### **Data Analysis**
+
+The key tasks for this stage were
+
+* Aggregation of data so that it's useful and accessible.
+* Organizing and formatting of the data.
+* Performing the necessary calculations.
+* Identifying trends and relationships.
+
+We primarily analyzed two factors
+
+#### **Average Ride length of Casual v/s Members by day**
+
+```{r all_trips_avg_ride_time, echo=FALSE}
+all_trips_avg_ride_time <- read.csv("all_trips_avg_ride_time.csv")
+all_trips_avg_ride_time
+```
+
+#### **Average Ride time of Casual v/s Members by day**
+
+
+```{r rider_data_by_type_week, echo=FALSE}
+rider_data_by_type_week <- read.csv("rider_data_by_type_week.csv")
+rider_data_by_type_week
+```
+
+
+### **Data Visualizations**
+
+You can also embed plots, for example:
+
+```{r number_of_rides, echo=FALSE}
+plot1 <- read.csv('plot1_data.csv')
+plot1 %>% ggplot(aes(x = weekday, y = number_of_rides, fill = member_casual)) +
+  geom_col(position = "dodge")
+```
+
+```{r average_duration, echo=FALSE}
+plot2 <- read.csv('plot2_data.csv')
+plot2 %>% ggplot(aes(x = weekday, y = number_of_rides, fill = member_casual)) +
+  geom_col(position = "dodge")
+```

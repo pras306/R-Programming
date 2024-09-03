@@ -1,0 +1,16 @@
+"","ride_id","started_at","ended_at","rideable_type","start_station_id","start_station_name","end_station_id","end_station_name","member_casual","date","month","day","year","day_of_week","ride_length"
+"1","21742443",2019-01-01 00:04:37,2019-01-01 00:11:07,"2167",199,"Wabash Ave & Grand Ave",84,"Milwaukee Ave & Grand Ave","member",2019-01-01,"01","01","2019","Tuesday",390
+"2","21742444",2019-01-01 00:08:13,2019-01-01 00:15:34,"4386",44,"State St & Randolph St",624,"Dearborn St & Van Buren St (*)","member",2019-01-01,"01","01","2019","Tuesday",441
+"3","21742445",2019-01-01 00:13:23,2019-01-01 00:27:12,"1524",15,"Racine Ave & 18th St",644,"Western Ave & Fillmore St (*)","member",2019-01-01,"01","01","2019","Tuesday",829
+"4","21742446",2019-01-01 00:13:45,2019-01-01 00:43:28,"252",123,"California Ave & Milwaukee Ave",176,"Clark St & Elm St","member",2019-01-01,"01","01","2019","Tuesday",1783
+"5","21742447",2019-01-01 00:14:52,2019-01-01 00:20:56,"1170",173,"Mies van der Rohe Way & Chicago Ave",35,"Streeter Dr & Grand Ave","member",2019-01-01,"01","01","2019","Tuesday",364
+"6","21742448",2019-01-01 00:15:33,2019-01-01 00:19:09,"2437",98,"LaSalle St & Washington St",49,"Dearborn St & Monroe St","member",2019-01-01,"01","01","2019","Tuesday",216
+"7","21742449",2019-01-01 00:16:06,2019-01-01 00:19:03,"2708",98,"LaSalle St & Washington St",49,"Dearborn St & Monroe St","member",2019-01-01,"01","01","2019","Tuesday",177
+"8","21742450",2019-01-01 00:18:41,2019-01-01 00:20:21,"2796",211,"St. Clair St & Erie St",142,"McClurg Ct & Erie St","member",2019-01-01,"01","01","2019","Tuesday",100
+"9","21742451",2019-01-01 00:18:43,2019-01-01 00:47:30,"6205",150,"Fort Dearborn Dr & 31st St",148,"State St & 33rd St","member",2019-01-01,"01","01","2019","Tuesday",1727
+"10","21742452",2019-01-01 00:19:18,2019-01-01 00:24:54,"3939",268,"Lake Shore Dr & North Blvd",141,"Clark St & Lincoln Ave","member",2019-01-01,"01","01","2019","Tuesday",336
+"11","21742453",2019-01-01 00:20:34,2019-01-01 00:35:20,"6243",299,"Halsted St & Roscoe St",295,"Broadway & Argyle St","member",2019-01-01,"01","01","2019","Tuesday",886
+"12","21742454",2019-01-01 00:21:52,2019-01-01 00:32:45,"6300",204,"Prairie Ave & Garfield Blvd",420,"Ellis Ave & 55th St","member",2019-01-01,"01","01","2019","Tuesday",653
+"13","21742455",2019-01-01 00:23:04,2019-01-01 00:33:05,"3029",90,"Millennium Park",255,"Indiana Ave & Roosevelt Rd","member",2019-01-01,"01","01","2019","Tuesday",601
+"14","21742456",2019-01-01 00:23:43,2019-01-01 00:33:05,"84",90,"Millennium Park",255,"Indiana Ave & Roosevelt Rd","casual",2019-01-01,"01","01","2019","Tuesday",562
+"15","21742457",2019-01-01 00:23:54,2019-01-01 00:39:00,"5019",289,"Wells St & Concord Ln",324,"Stockton Dr & Wrightwood Ave","member",2019-01-01,"01","01","2019","Tuesday",906
