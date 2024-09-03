@@ -135,7 +135,7 @@ all_trips_v2$day_of_week <- ordered(all_trips_v2$day_of_week, levels=c("Sunday",
 aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual + all_trips_v2$day_of_week, FUN = mean)
 write.csv(aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual + all_trips_v2$day_of_week, FUN = mean), file = 'all_trips_avg_ride_time.csv')
 
-# analyze ridership data by type and weekday
+# Analyze ridership data by type and weekday
 ridership_data_by_type_week <- all_trips_v2 %>% 
   mutate(weekday = wday(started_at, label = TRUE)) %>%  #creates weekday field using wday()
   group_by(member_casual, weekday) %>%  #groups by usertype and weekday
@@ -145,7 +145,7 @@ ridership_data_by_type_week <- all_trips_v2 %>%
 
 write.csv(ridership_data_by_type_week, file = 'rider_data_by_type_week.csv')
 
-# Let's visualize the number of rides by rider type
+# Visualize the number of rides by rider type
 plot1 <- all_trips_v2 %>% 
   mutate(weekday = wday(started_at, label = TRUE)) %>% 
   group_by(member_casual, weekday) %>% 
@@ -158,7 +158,7 @@ write.csv(plot1, file = 'plot1_data.csv')
 plot1 %>% ggplot(aes(x = weekday, y = number_of_rides, fill = member_casual)) +
   geom_col(position = "dodge")
 
-# Let's create a visualization for average duration
+# Create a visualization for average duration
 plot2 <- all_trips_v2 %>% 
   mutate(weekday = wday(started_at, label = TRUE)) %>% 
   group_by(member_casual, weekday) %>% 
@@ -173,8 +173,6 @@ plot2 %>% ggplot(aes(x = weekday, y = average_duration, fill = member_casual)) +
 #=================================================
 # STEP 5: EXPORT SUMMARY FILE FOR FURTHER ANALYSIS
 #=================================================
-# Create a csv file that we will visualize in Excel, Tableau, or my presentation software
-# N.B.: This file location is for a Mac. If you are working on a PC, change the file location accordingly (most likely "C:\Users\YOUR_USERNAME\Desktop\...") to export the data. You can read more here: https://datatofish.com/export-dataframe-to-csv-in-r/
 counts <- aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual + all_trips_v2$day_of_week, FUN = mean)
 write.csv(counts, file = 'avg_ride_length.csv')
 
