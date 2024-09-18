@@ -14,7 +14,7 @@
 
 The following are the projects in R Programming
 
-### [Cyclistic Bike Share Google Capstone Project](/R-Programming/README.md)
+### [Cyclistic Bike Share Google Capstone Project](cyclistic-case-study/README.md)
 
 - Objective: Analyze membership data to understand and differentiate between casual and annual members.
 - Key Tasks: Cleaned, transformed, and analyzed data using R, identifying key trends and outliers.
